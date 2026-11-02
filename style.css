@@ -1,0 +1,104 @@
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2effa;
+    color: #29243a;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    text-align: center;
+    padding: 48px 20px;
+    background: #6246a5;
+    color: white;
+}
+
+.cabecalho h1 {
+    margin: 0 0 12px;
+    font-size: 2rem;
+}
+
+/* Organização dos cartões */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 22px;
+}
+
+/* Cartões */
+.cartao {
+    min-height: 230px;
+    padding: 24px 16px;
+    background: white;
+    border: 1px solid #e1d9f2;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(48, 34, 78, 0.08);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    transition: transform 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.cartao:hover {
+    transform: translateY(-5px);
+}
+
+/* Nome dos sites */
+.cartao h2 {
+    margin: 0;
+    color: #51368d;
+    font-size: 1.25rem;
+}
+
+/* Todos os ícones com o mesmo tamanho */
+.cartao img {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
+    object-fit: contain;
+}
+
+/* Links */
+.cartao a {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #6246a5;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cartao a:hover {
+    background: #432d78;
+}
+
+/* Rodapé */
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #625a70;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .cabecalho h1 {
+        font-size: 1.5rem;
+    }
+}
